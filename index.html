@@ -4,52 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="A comprehensive guide to understanding our services. Discover high-quality content and resources here.">
-    <meta name="keywords" content="web development, tutorials, google analytics, html template">
-    <meta name="author" content="Your Name or Company">
+    <meta name="description" content="Elevate your digital presence with our premium web development and analytics services.">
+    <meta name="keywords" content="web development, design, analytics, modern template">
+    <meta name="author" content="Your Company Name">
     
-    <title>My Awesome Webpage | Home</title>
+    <title>Premium Services | Innovate Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8GBM43DH1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-E8GBM43DH1');
     </script>
+
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary-color: #4F46E5;
+            --text-main: #1F2937;
+            --text-light: #6B7280;
+            --bg-color: #F9FAFB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Layout Utility */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #4F46E5 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+        }
+
+        /* Headings inside Main */
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Image Styling */
+        figure {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-list li {
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            .content-section { padding: 25px; }
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Awesome Webpage</h1>
-        <p>Your one-stop destination for great content.</p>
+        <div class="container">
+            <h1>Innovate Web Solutions</h1>
+            <p>Building digital experiences that grow your business.</p>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2>About Our Services</h2>
-            <p>We provide top-notch solutions for your everyday needs. Whether you are looking for web development, design, or analytics integration, we have you covered.</p>
+    <main class="container">
+        <article class="content-section">
+            <h2>Transform Your Digital Presence</h2>
+            <p>In today's fast-paced world, having a robust online footprint is no longer optional. We provide end-to-end web development, stunning UI/UX design, and deep data analytics to ensure your platform performs at its absolute best.</p>
             
             <figure>
-                <img src="https://picsum.photos/800/400" alt="A beautiful placeholder landscape representing our services" width="800" height="400">
-                <figcaption>Figure 1: A beautiful landscape placeholder.</figcaption>
-            </figure>
-
-            <h3>Why Choose Us?</h3>
-            <p>Our team is dedicated to bringing your vision to life. Here are a few reasons to work with us:</p>
-            <ul>
-                <li>Expertise in modern web technologies.</li>
-                <li>Data-driven insights (powered by Google Analytics).</li>
-                <li>Responsive and accessible design.</li>
-            </ul>
-        </article>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2026 My Awesome Webpage. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+                <img src="
